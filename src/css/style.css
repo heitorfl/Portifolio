@@ -1,0 +1,402 @@
+/*Geral*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0D324D;
+    background-image: url(/src/img/fundo-2.jpg);
+    background-repeat: no-repeat;
+    background-position: 15%;
+    
+}
+
+.font-space-mono{
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.font-space-mono-bold {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.font-space-grotesk{
+    font-family: "Space Grotesk", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*About*/
+
+#about{
+    display: grid;
+    margin-top: 90px;
+    margin-bottom: 90px;
+    align-content: center;
+    justify-content: center;
+}
+
+#about #foto-perfil{
+    margin: 0;
+    width: 450px;
+    transition: 0.5s;
+}
+
+#about #foto-perfil:hover{
+    margin: -25px 0 25px 0;
+}
+
+#about .col-md-6#textos-about{
+    color: #FFFF;
+    text-align: justify;
+    align-content: center;
+    
+}
+#about h1{
+    font-size: 40px;
+    border-right: 2px solid #FFFF;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#about p{
+    padding-top: 40px;
+}
+
+.animate{
+    animation: blink 800ms infinite steps(25) none, type 3s steps(25) normal both;
+}
+
+@keyframes blink{
+    from{
+        border-right: 2px solid #FFFF;
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+@keyframes type{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+#about .redes-sociais{
+    margin-top: 50px;
+}
+
+#about button{
+    border-radius: 28px;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+#about #linkedin{
+    background-color: #0077B6;
+    img{
+        width: 90px;
+    }
+}
+
+#about #instagram{
+    background-color: #2A9D8F;
+    img{
+        width: 90px;
+    }
+    
+}
+
+#about #github{
+    background-color: #A8DADC;
+    img{
+        width: 30px;
+    }
+    img#escrita{
+        width: 50px;
+        margin: 0 10px 0 10px;
+    }
+
+}
+
+#about .container .row #textos-about button:hover{
+    border: 1px solid;
+    background-color: transparent;
+}
+
+
+/*Tech*/
+
+#tech{
+    text-align: center;
+    justify-content: center;
+    background-color: #020202;
+    padding: 30px;
+}
+
+#tech h2{
+    color: #FFFF;
+    padding-bottom: 30px;
+}
+
+#tech button{
+    background-color: #0D324D;
+    padding: 20px 100px 20px 100px;
+    margin: 20px;
+    border-radius: 28px;
+    border: 2px solid #020202;
+    transition: 0.5s;
+}
+
+#tech button i{
+    font-size: 60px;
+    color: #020202;
+    transition: 0.5s;
+}
+
+#tech button#bootstrap, #tech button#Saas{
+    padding: 20px 90px 20px 90px;
+}
+
+#tech button:hover{
+    background-color: #020202;
+    margin: 20px;
+    border-radius: 28px;
+    border: 2px solid #0D324D;
+    i{
+        color: #0D324D;
+    }
+}
+
+/*Projetos*/
+
+#projects{
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+#projects h2{
+    color: #FFFF;
+    padding-bottom: 30px;
+}
+
+#projects .card{
+    background-color: #020202;
+    color: #FFFF;
+    transition: 0.5s;
+}
+
+#projects .card h5{
+    font-size: 18px;
+}
+
+#projects .card p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+#projects .card a{
+    color: #FFFF;
+    border: 1px solid #FFFF;
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    margin: 20px;
+    font-size: 15px;
+}
+
+#projects .card:hover{
+    margin: -15px 0 0 0;
+}
+
+#projects .card a:hover{
+    background-color: #FFFF;
+    color: #020202;
+    font-weight: 700;
+}
+
+/*Footer*/
+
+footer .container-fluid{
+    padding: 20px;
+    background-color: #020202;
+    margin-bottom: 0;
+}
+
+footer i{
+    font-size: 40px;
+    color: #FFFF;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+footer p{
+    color: #FFFF;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1200px){
+    #about h1{
+        font-size: 34px;
+    }
+    #about .redes-sociais button{
+        margin-left: 10px;
+    }
+    #about #linkedin{
+        img{
+            width: 100px;
+        }
+    }
+    #about #instagram{
+        img{
+            width: 100px;
+        }
+    }
+    #about #github{
+        img{
+            width: 40px;
+        }
+        img#escrita{
+            width: 60px;
+        }
+    }
+    /*Tech*/
+    #tech button{
+        padding: 20px 60px 20px 60px;
+        margin: 20px;
+    }
+    #tech button#bootstrap, #tech button#Saas{
+        padding: 20px 50px 20px 50px;
+    }
+}
+
+@media (max-width: 992px){
+    #about #foto-perfil{
+        width: 300px;
+        margin-top: 70px;
+    }
+    #about #foto-perfil:hover{
+        margin: 20px 0 70px 0;
+    }
+    #about h1{
+        font-size: 25px;
+    }
+    #about #linkedin{
+        img{
+            width: 60px;
+        }
+    }
+    #about #instagram{
+        img{
+            width: 60px;
+        }
+    }
+    #about #github{
+        img{
+            width: 30px;
+        }
+        img#escrita{
+            width: 35px;
+        }
+    }
+    /*Projects*/
+    #projects .col-md-4{
+            margin-left: 200px;
+            margin-bottom: 10px;
+    }
+    #projects .card:hover{
+        margin: -15px 0 10px 0;
+    }
+}
+
+@media (max-width: 760px){
+    /*About*/
+
+    #about{
+        margin-top: 50px;
+    }
+
+    #about #foto-perfil{
+        width: 350px;
+        margin-left: 70px;
+    }
+
+    
+    #about #foto-perfil:hover{
+        margin: -25px 0 25px 70px;
+    }
+
+    #about h1{
+        font-size: 38px;
+        padding-top: 15px;
+    }
+
+    /*Projetos*/
+
+    #projects .card{
+        margin-left: 110px;
+        margin-top: 10px;
+    }
+
+    #projects .card:hover{
+        margin: -15px 0 20px 110px;
+    }
+    
+}
+
+@media (max-width: 425px){
+    /*About*/
+    #about #foto-perfil{
+        width: 300px;
+        margin-left: 30px;
+    }
+    #about #foto-perfil:hover{
+        margin: -25px 0 25px 30px;
+    }
+    #about h1{
+        font-size: 28px;
+    }
+    #about .redes-sociais button{
+        margin-left: 10px;
+    }
+    #about #linkedin{
+        img{
+            width: 80px;
+        }
+    }
+    #about #instagram{
+        img{
+            width: 80px;
+        }
+    }
+    #about #github{
+        img{
+            width: 30px;
+        }
+        img#escrita{
+            width: 50px;
+        }
+    }
+
+    /*Projetos*/
+
+    #projects .card{
+        margin-left: 45px;
+    }
+    #projects .card:hover{
+        margin: -15px 0 20px 45px;
+    }
+}
