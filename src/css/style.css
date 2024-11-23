@@ -322,7 +322,7 @@ footer p{
     }
 }
 
-@media (max-width: 760px){
+@media (max-width: 768px){
     /*About*/
 
     #about{
@@ -347,12 +347,12 @@ footer p{
     /*Projetos*/
 
     #projects .card{
-        margin-left: 110px;
+        margin-left: -85px;
         margin-top: 10px;
     }
 
     #projects .card:hover{
-        margin: -15px 0 20px 110px;
+        margin: -15px 0 20px -85px;
     }
     
 }
