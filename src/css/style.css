@@ -236,13 +236,32 @@ footer .container-fluid{
     padding: 20px;
     background-color: #020202;
     margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .f-sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFF;
+    padding: 10px 0 10px 0;
+    width: 500px;
+    margin: 23px;
+    border-radius: 24px;
+}
+
+footer .f-sociais img{
+    width: 40px;
+    margin: 8px;
 }
 
 footer i{
     font-size: 40px;
     color: #FFFF;
     padding: 10px;
-    margin-bottom: 25px;
 }
 
 footer p{
@@ -364,6 +383,7 @@ footer p{
     /*About*/
     #about{
         margin-top: -10px;
+        margin-bottom: 10px;
     }
     #about #foto-perfil{
         width: 300px;
@@ -373,7 +393,10 @@ footer p{
         margin: 50px 0 20px 30px;
     }
     #about h1{
-        font-size: 28px;
+        font-size: 27px;
+    }
+    #about p{
+        font-size: 15px;
     }
     #about .redes-sociais button{
         display: none;
@@ -391,5 +414,9 @@ footer p{
     }
     #projects .card:hover{
         margin: -15px 0 20px -160px;
+    }
+    /*Footer*/
+    footer .f-sociais{
+        width: 250px;
     }
 }
