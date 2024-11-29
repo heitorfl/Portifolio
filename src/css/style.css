@@ -376,25 +376,7 @@ footer p{
         font-size: 28px;
     }
     #about .redes-sociais button{
-        margin-left: 10px;
-    }
-    #about #linkedin{
-        img{
-            width: 80px;
-        }
-    }
-    #about #instagram{
-        img{
-            width: 80px;
-        }
-    }
-    #about #github{
-        img{
-            width: 30px;
-        }
-        img#escrita{
-            width: 50px;
-        }
+        display: none;
     }
 
     /*Projetos*/
