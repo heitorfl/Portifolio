@@ -100,6 +100,8 @@ body{
     border-radius: 28px;
     margin-left: 30px;
     justify-content: center;
+    transition: 0.5s;
+    margin-top: 35px;
 }
 
 #about #linkedin{
@@ -129,9 +131,10 @@ body{
 
 }
 
-#about .container .row #textos-about button:hover{
-    border: 1px solid;
-    background-color: transparent;
+#about button:hover{
+    padding: 15px;
+    margin-top: 16px;
+    margin-right: -6px;
 }
 
 
@@ -154,13 +157,13 @@ body{
     padding: 20px 100px 20px 100px;
     margin: 20px;
     border-radius: 28px;
-    border: 2px solid #020202;
+    border: 2px solid #FFFF;
     transition: 0.5s;
 }
 
 #tech button i{
     font-size: 60px;
-    color: #020202;
+    color: #FFFF;
     transition: 0.5s;
 }
 
@@ -172,9 +175,9 @@ body{
     background-color: #020202;
     margin: 20px;
     border-radius: 28px;
-    border: 2px solid #0D324D;
+    border: 2px solid #0077B6;
     i{
-        color: #0D324D;
+        color: #0077B6;
     }
 }
 
@@ -357,14 +360,17 @@ footer p{
     
 }
 
-@media (max-width: 425px){
+@media screen and (max-width: 425px){
     /*About*/
+    #about{
+        margin-top: -10px;
+    }
     #about #foto-perfil{
         width: 300px;
         margin-left: 30px;
     }
     #about #foto-perfil:hover{
-        margin: -25px 0 25px 30px;
+        margin: 50px 0 20px 30px;
     }
     #about h1{
         font-size: 28px;
@@ -374,29 +380,34 @@ footer p{
     }
     #about #linkedin{
         img{
-            width: 80px;
+            width: 30px;
         }
     }
     #about #instagram{
         img{
-            width: 80px;
+            width: 30px;
         }
     }
     #about #github{
         img{
-            width: 30px;
+            width: 10px;
         }
         img#escrita{
-            width: 50px;
+            width: 20px;
         }
     }
 
     /*Projetos*/
 
+    #projects{
+        display: grid;
+        place-items: center;
+    }
+
     #projects .card{
-        margin-left: 45px;
+        margin-left: -150px;
     }
     #projects .card:hover{
-        margin: -15px 0 20px 45px;
+        margin: -15px 0 20px -150px;
     }
 }
