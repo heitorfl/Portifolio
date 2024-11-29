@@ -251,7 +251,7 @@ footer p{
 
 /*Responsividade*/
 
-@media (max-width: 1200px){
+@media screen and (max-width: 1200px){
     #about h1{
         font-size: 34px;
     }
@@ -286,7 +286,7 @@ footer p{
     }
 }
 
-@media (max-width: 992px){
+@media screen and (max-width: 992px){
     #about #foto-perfil{
         width: 300px;
         margin-top: 70px;
@@ -317,15 +317,15 @@ footer p{
     }
     /*Projects*/
     #projects .col-md-4{
-            margin-left: 200px;
-            margin-bottom: 10px;
+        margin-left: 200px;
+        margin-bottom: 10px;
     }
     #projects .card:hover{
         margin: -15px 0 10px 0;
     }
 }
 
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     /*About*/
 
     #about{
@@ -380,20 +380,20 @@ footer p{
     }
     #about #linkedin{
         img{
-            width: 30px;
+            width: 80px;
         }
     }
     #about #instagram{
         img{
-            width: 30px;
+            width: 80px;
         }
     }
     #about #github{
         img{
-            width: 10px;
+            width: 30px;
         }
         img#escrita{
-            width: 20px;
+            width: 50px;
         }
     }
 
@@ -405,9 +405,9 @@ footer p{
     }
 
     #projects .card{
-        margin-left: -150px;
+        margin-left: -160px;
     }
     #projects .card:hover{
-        margin: -15px 0 20px -150px;
+        margin: -15px 0 20px -160px;
     }
 }
