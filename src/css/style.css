@@ -11,7 +11,7 @@ body{
     background-image: url(/src/img/fundo.jpg);
     background-repeat: no-repeat;
     background-position: 15%;
-    
+    overflow-x: hidden;
 }
 
 .font-space-mono{
